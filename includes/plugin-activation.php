@@ -48,6 +48,11 @@ function portfolio_lite_register_required_plugins() {
 			'slug'               => 'organic-customizer-widgets', // The plugin slug (typically the folder name).
 			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
 		),
+		array(
+			'name'               => 'Advanced Custom Fields', // The plugin name.
+			'slug'               => 'advanced-custom-fields', // The plugin slug (typically the folder name).
+			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+		),
 
 	);
 
