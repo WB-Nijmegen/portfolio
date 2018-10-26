@@ -29,6 +29,28 @@ get_header(); ?>
 		<!-- BEGIN .content -->
 		<div class="content">
 
+			<!-- BEGIN schema -->
+			<script type="application/ld+json">
+			<?php
+			$person = [
+				"@context" => "http://schema.org",
+				"@type" => "Person",
+				"name" => get_field( "schema-name" ),
+				"gender" => get_field( "schema-gender"),
+				"jobTitle" => get_field( "schema-jobtitle" ),
+				"address" => [
+					"@type" => "PostalAddress",
+					"addressCountry" => get_field( "schema-addresscountry" )
+				],
+				"birthPlace" => get_field( "schema-birthplace"),
+				"birthDate" => get_field ( "schema-birthday" ),
+				"nationality" => get_field ( "schema-nationality" ),
+				"email" => get_field ( "schema-email" )
+			];
+			echo json_encode( $person );
+			?>
+			<!-- END schema -->
+
 		<?php if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
 
 			<!-- BEGIN .eleven columns -->
