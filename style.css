@@ -766,12 +766,6 @@ ul.menu li li a::after {
 .article h1:first-child + p,
 .article h2:first-child + p,
 .article h2:first-child + .feature-img + p,
-.article > p:first-child {
-	color: rgba(0, 0, 0, 0.5);
-	font-size: 1.2em;
-	font-weight: 300;
-	line-height: 1.45;
-}
 .article h1:first-child + p,
 .article h2:first-child + p,
 .article > p:first-child,

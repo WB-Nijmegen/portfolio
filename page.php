@@ -45,6 +45,7 @@ get_header(); ?>
 				"birthPlace" => get_field( "schema-birthplace"),
 				"birthDate" => get_field ( "schema-birthday" ),
 				"nationality" => get_field ( "schema-nationality" ),
+				"image" => get_field ( "schema-image" ),
 				"email" => get_field ( "schema-email" )
 			];
 			echo json_encode( $person );
